@@ -1,0 +1,17 @@
+directories:
+  output: dist
+  buildResources: assets
+files:
+  - filter:
+      - build/**/*
+      - build/**/*
+      - node_modules/**/*
+extraMetadata:
+  main: build/electron.js
+appId: com.my-website.blog-admin
+productName: BlogAdmin
+copyright: 'Copyright © 2019 ${author}'
+mac:
+  category: public.app-category.utilities
+extends: react-cra
+electronVersion: 9.2.1
